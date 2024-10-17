@@ -46,7 +46,7 @@ mongodb.MongoClient.connect(url, { useUnifiedTopology: true })
   }
 
 // Start the server
-const PORT =process.env.REACT_APP_API_URL;
+const PORT =process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
